@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Foro</title>
+    <link rel="stylesheet" href="foro.css">
+</head>
+<body>
+    <h1>Foro</h1>
+    <section id="nueva-publicacion">
+        <h2>Nueva Publicación</h2>
+        <form id="form-publicacion">
+            <label for="titulo">Nombre Usuario</label><br>
+            <input type="text" id="titulo" name="titulo"><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje"></textarea><br>
+            <input type="submit" value="Publicar">
+        </form>
+    </section>
+    <section id="publicaciones">
+        <h2>Publicaciones</h2>
+        <!-- Aquí es donde se agregarán las nuevas publicaciones -->
+    </section>
+
+    <script>
+        document.getElementById('form-publicacion').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var titulo = document.getElementById('titulo').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            var publicacion = document.createElement('article');
+            publicacion.innerHTML = '<h3>' + titulo + '</h3><p>' + mensaje + '</p>';
+
+            document.getElementById('publicaciones').appendChild(publicacion);
+
+            document.getElementById('titulo').value = '';
+            document.getElementById('mensaje').value = '';
+        });
+    </script>
+</body>
+</html>

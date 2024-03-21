@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartir Experiencias y Evaluar</title>
+    <link rel="stylesheet" href="./evaluacion.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Compartir Experiencias y Evaluar</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="experiencia">Tu Experiencia:</label>
+            <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+            <label for="evaluacion">Evaluación:</label>
+            <select id="evaluacion" name="evaluacion" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="5">Excelente</option>
+                <option value="4">Muy bueno</option>
+                <option value="3">Bueno</option>
+                <option value="2">Regular</option>
+                <option value="1">Malo</option>
+            </select>
+            <input type="submit" value="Compartir">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Geolocalización</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places"></script>
+    <script src="./sistema.js" defer></script>
+    <link rel="stylesheet" href="./siustema.css">
+    
+</head>
+<body>
+    <section id="sistema-geolocalizacion">
+        <h2>Sistema de Geolocalización</h2>
+        <p>Nuestro sistema de geolocalización muestra rutas a centros de apoyo cercanos para víctimas.</p>
+        <button onclick="buscarCentrosApoyo();">Ver centros de apoyo cercanos</button>
+        <div id="mapa"></div>
+    </section>
+</body>
+</html>

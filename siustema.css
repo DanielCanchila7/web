@@ -1,0 +1,31 @@
+/* Estilos para el contenedor del mapa */
+#mapa {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px 20px; /* Padding del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el título */
+h2 {
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el párrafo */
+p {
+    color: #666; /* Color del texto */
+}
+
